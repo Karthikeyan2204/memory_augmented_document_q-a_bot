@@ -98,7 +98,12 @@ file:
   }
 }
 ```
+## RUN APP FILE 
 
+to run the app file and access the bot as a website use the command
+```bash
+streamlit run app_3.py
+```
 ## A note on versions
 
 `requirements.txt` caps `langchain` below `0.3.27` on purpose. LangChain

@@ -1,0 +1,22 @@
+# No API keys needed anywhere - embeddings run locally on your machine.
+#
+# langchain is capped below 0.3.27 on purpose: LangChain moved
+# ConversationBufferWindowMemory and VectorStoreRetrieverMemory out of
+# langchain.memory and into a separate langchain_classic package starting
+# at 0.3.27. Staying below that line keeps the simple `from langchain.memory
+# import ...` line in memory.py working.
+
+langchain>=0.3.7,<0.3.27
+langchain-community>=0.3.5,<0.3.27
+langchain-chroma>=0.1.4
+langchain-huggingface>=0.1.2
+chromadb>=0.5.23
+sentence-transformers>=3.2.1
+mcp>=1.1.2
+
+# Multi-format document support (read_file_text in qa_bot.py)
+pypdf>=4.0.0
+python-docx>=1.1.0
+
+# Web UI (app.py)
+streamlit>=1.30.0
